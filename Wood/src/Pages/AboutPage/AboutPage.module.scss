@@ -1,0 +1,25 @@
+.aboutwrapper {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 335px);
+    gap: 5rem;
+    padding-bottom: 1.5rem;
+    
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+
+        p {
+            color: var(--taupe);
+            font-family: var(--opensans);
+            font-size: 14px;
+            text-align: left;
+            line-height: 19px;
+        }
+    }
+
+    img {
+        width: 100%;
+        max-height: 335px;
+    }
+}

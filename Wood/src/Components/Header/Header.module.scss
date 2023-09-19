@@ -1,0 +1,50 @@
+.header {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-bottom: 2px solid var(--sealbrown);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    
+
+    span {
+        
+        a {
+            text-decoration: none;
+            width: 100%;
+            max-width: 318px;
+            color: var(--burntsienna);
+            font-size: 54px;
+            font-family: var(--titillium);
+            font-weight: 900;
+            text-align: left;
+            line-height: 82px;
+            opacity: 1;
+    
+        }
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+        .cart {
+            width: 25px;
+            height: 25px;
+            color: var(--black);
+            margin-bottom: 20px;
+            transition: all ease-out 0.3s;
+            cursor: pointer;
+        }
+        
+        .cart:hover {
+            color: var(--burntsienna);
+            transition: all ease-out 0.3s;
+        }
+    }
+
+
+}

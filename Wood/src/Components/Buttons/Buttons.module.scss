@@ -1,0 +1,19 @@
+.button {
+    background-color: var(--paledogwood);
+    color: var(--taupe);
+    font-family:  var(--opensans);
+    font-size: 16px;
+    text-align: left;
+    line-height: 22px;
+    border: 1px solid var(--taupe);
+    border-radius: 3px;
+    padding: 6px 18px;
+    transition: all ease-out 0.3s;
+}
+
+.button:hover {
+    background-color: var(--cinereous);
+    color: var(--seasalt);
+    transition: all ease-out 0.3s;
+}
+

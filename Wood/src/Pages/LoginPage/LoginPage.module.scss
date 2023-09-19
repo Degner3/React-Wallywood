@@ -1,0 +1,105 @@
+.login {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+
+    .loginwrapper {
+        width: 100%;
+        max-width: 407px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        margin-bottom: 1rem;
+
+        p {
+            color: var(--taupe);
+            font-family: var(--opensans);
+
+            font-size: 14px;
+            line-height: 19px;
+
+            span {
+                color: var(--engineeringorange);
+                font-family: var(--opensans);
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+
+        span {
+            color: red;
+            font-family: var(--opensans);
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+
+    .btndiv {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        input {
+            text-decoration: none;
+            background-color: var(--paledogwood);
+            color: var(--taupe);
+            font-family:  var(--opensans);
+            font-size: 16px;
+            text-align: left;
+            line-height: 22px;
+            border: 1px solid var(--taupe);
+            border-radius: 3px;
+            padding: 6px 18px;
+            transition: all ease-out 0.3s;
+        }
+        
+        input:hover {
+            background-color: var(--cinereous);
+            color: var(--seasalt);
+            transition: all ease-out 0.3s;
+        }
+        
+        button {
+            text-decoration: none;
+            background-color: var(--paledogwood);
+            color: var(--taupe);
+            font-family:  var(--opensans);
+            font-size: 16px;
+            text-align: left;
+            line-height: 22px;
+            border: 1px solid var(--taupe);
+            border-radius: 3px;
+            padding: 6px 18px;
+            transition: all ease-out 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--cinereous);
+            color: var(--seasalt);
+            transition: all ease-out 0.3s;
+        }
+
+    }
+}
+
+.signupbtn {
+    text-decoration: none;
+    background-color: var(--paledogwood);
+    color: var(--taupe);
+    font-family:  var(--opensans);
+    font-size: 16px;
+    text-align: left;
+    line-height: 22px;
+    border: 1px solid var(--taupe);
+    border-radius: 3px;
+    padding: 6px 27px;
+    transition: all ease-out 0.3s;
+    
+}
+
+.signupbtn:hover {
+    background-color: var(--cinereous);
+    color: var(--seasalt);
+    transition: all ease-out 0.3s;
+}

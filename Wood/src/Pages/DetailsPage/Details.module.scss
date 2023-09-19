@@ -1,0 +1,103 @@
+.details{
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    figure {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        gap: 1rem;
+
+        img {
+            width: 100%;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                font-family: var(--opensans);
+                font-size: 25px;
+                color: var(--taupe);
+                line-height: 27px;
+                text-transform: uppercase;
+                margin-bottom: 0.5rem;
+            }
+            
+            p {
+                font-family: var(--opensans);
+                color: var(--taupe);
+                font-size: 14px;
+                line-height: 19px;
+                margin-bottom: 10px;
+            }
+
+            .pricetext {
+                color: var(--taupe);
+                font-family: var(--titillium);
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 1rem;
+            }
+
+
+            .btndiv {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    gap: 20px;
+
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                }
+
+                .amount {
+                    border: 2px solid gray;
+                    width: auto;
+                    padding: 8px 10px;
+                    width: 40px;
+                    text-align: center;
+                    font-size: 16px;
+                }
+
+                .cart {
+                    width: 100px;
+                    border: 2px solid gray;
+                    padding: 8px 10px;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    background-color: #D9785277;
+                    font-size: 16px;
+                }
+
+                p {
+                    font-family: var(--opensans);
+                    font-size: 18px;
+                    line-height: 19px;
+
+                    span {
+                        font-family: var(--opensans);
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+                }
+            }
+
+            .button {
+                display: flex;
+                justify-content: left;
+                margin-top: auto;
+            }
+        }
+        
+    }
+    
+}
