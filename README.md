@@ -1,2 +1,2 @@
 # React-Wallywood
- React-Wallywood
+ React-Wallywood-Project
