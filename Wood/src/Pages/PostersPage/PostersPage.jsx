@@ -6,12 +6,12 @@ import style from "./PostersPage.module.scss";
 
 export const PostersPage = () => {
 
+   // State hooks for at gemme plakater, genrer og den aktuelle genre id.
   const [poster, setPoster] = useState([]);
   const [genres, setGenres] = useState([]);
   const [slug, setSlug] = useState("drama");
-  // const { user } = useContext(LoginContext)
   
-
+  // funktionen kører, når komponenten indlæses eller når 'slug/id' ændres.
   useEffect(() => {
     //Plakater under en genre
     const url = `http://localhost:4000/poster/list/${slug}?limit=30`;
@@ -25,20 +25,6 @@ export const PostersPage = () => {
       .then((res) => res.json())
       .then((data) => setGenres(data));
   }, [slug]);
-
-
-  // function AddToCart(id) {
-  //   const url = "http://localhost:4000/cart"
-
-  //   const body = new URLSearchParams()
-  //   body.append("poster_id", id)
-  //   body.append("quantity", '1')
-  //   const options = { method: "POST", body: body, headers: { Authorization: `Bearer ${user.access_token}` } }
-
-  //   fetch(url, options).then(res => res.json()).then(data => console.log(data))
-
-  // }
-
 
   return (
     <Content title="Plakater">
@@ -101,9 +87,6 @@ export const PostersPage = () => {
                   <div className={style.btndiv}>
                     <Buttons><NavLink to={`/details/${item.slug}`} >Læg i kurv</NavLink></Buttons>
                   </div>
-                  {/* <Buttons clickEvent={() => AddToCart(item.id)}>
-                    Læg i kurv
-                  </Buttons> */}
                 </section>
               );
             })}

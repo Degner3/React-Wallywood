@@ -3,11 +3,8 @@ import { NavBar } from "../NavBar/NavBar"
 import { FaShoppingBasket } from "react-icons/fa"
 import { NavLink } from 'react-router-dom'
 
-
-
-
+// Header med navigation bar ind i
 export const Header = () => {
-
 
     return (
         <header className={style.header}>

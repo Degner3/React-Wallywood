@@ -2,12 +2,13 @@ import { useEffect, useState } from "react"
 import style from "./Filter.module.scss"
 import { NavLink } from 'react-router-dom'
 
-
+// Bliver ikke brugt var lavet til aside i Posters
 export const Filter = () => {
     
+  // State hook til at gemme genrer fra API'en
     const [genres, setGenres] = useState([])
     
-    
+    // En liste med genrer og deres tilhørende slug (URL-segment)
     const filterArray = [
         { genre: 'Action', slug: 'action' },
         { genre: 'Dokumentar', slug: 'dokumentar' },
@@ -19,6 +20,7 @@ export const Filter = () => {
         { genre: 'Krimi - Thriller', slug: 'krimi-thriller' }
     ]
 
+    // funktionen henter genrer fra API'en ved komponentens indlæsning
     useEffect(() => {
         const urlGenres = "http://localhost:4000/genre"
         fetch(urlGenres)

@@ -1,10 +1,10 @@
 import style from "./NavBar.module.scss"
-
 import { NavLink } from 'react-router-dom'
 
-
+// Navigation bar
 export const NavBar = () => {
 
+  // Et array med objekter, der repræsenterer navigationslinks og deres mål-sider.
   const navArray = [
     { Link: "/", page: "Home" },
     { Link: "/posters", page: "Plakater" },
@@ -22,7 +22,6 @@ export const NavBar = () => {
               <li key={index}>
                 <NavLink
                   to={item.Link}
-                  // className={style.links}
                   style={({ isActive }) => {
                     return {
                       color: isActive ? "#D97852" : "#524641",

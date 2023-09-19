@@ -1,6 +1,6 @@
 import style from "./Buttons.module.scss"
 
-
+// Button component
 export const Buttons = ({clickEvent, children}) => {
 
     return(

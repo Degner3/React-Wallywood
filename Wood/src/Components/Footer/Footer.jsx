@@ -2,9 +2,10 @@ import style from "./Footer.module.scss"
 import { FaPinterestSquare, FaInstagram, FaFacebookSquare, FaTwitterSquare } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
-
+// Footer med socials
 export const Footer = () => {
 
+  // En liste af sociale medie links med tilhørende ikoner.
   const socialLinks = [
     { icon: FaPinterestSquare, link: 'https://www.pinterest.dk' },
     { icon: FaInstagram, link: 'https://www.instagram.com' },
