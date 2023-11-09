@@ -93,8 +93,11 @@ export const LoginPage = () => {
   else
       return (
         <Content>
-          <SignUp/>
-          <button className={style.signupbtn} onClick={() => setLoginTrue(true)}>Login</button>
+          <div className="wrapperdiv">
+            <SignUp setLoginTrue={setLoginTrue}/>
+            
+          </div>
+          
         </Content>
         )
 

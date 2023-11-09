@@ -8,7 +8,7 @@ import { BsFillCheckCircleFill } from "react-icons/bs"
 
 
 
-export const SignUp = () => {
+export const SignUp = (props) => {
 
   // Henter funktionalitet fra useForm til at håndtere formularer
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -105,6 +105,7 @@ export const SignUp = () => {
               <span><BsFillCheckCircleFill/></span>
             </p>
           )} 
+           <button className={style.signupbtn} onClick={() => props.setLoginTrue(true)}>Login</button>
           </div>
 
           
